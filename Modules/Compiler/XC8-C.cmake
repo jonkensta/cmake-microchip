@@ -22,8 +22,6 @@ set(MICROCHIP_XC8_MODE "free"
 string(APPEND CMAKE_C_FLAGS_INIT
     # don't output the copyright notice on every invocation
     "-Q"
-    # use the configured license mode and fail if it's not available
-    " --mode=${MICROCHIP_XC8_MODE} --nofallback"
     # build for the configured MCU model
     " --chip=${MICROCHIP_MCU_MODEL}"
 )
